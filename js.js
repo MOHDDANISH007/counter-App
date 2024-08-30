@@ -1,6 +1,7 @@
 const count = document.querySelector(".count");
 const buttons = document.querySelectorAll("button");
 const input = document.querySelector("input");
+const theme = document.querySelector(".theme")
 
 const reset_btn = document.querySelector(".reset-btn");
 
@@ -34,4 +35,9 @@ reset_btn.addEventListener("click", () => {
     count.innerHTML = countNum;
     input.value = 1;
 
+})
+
+
+theme.addEventListener("click" , () => {
+    document.body.classList.toggle("dark");
 })
