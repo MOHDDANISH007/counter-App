@@ -1,4 +1,4 @@
-body{
+body {
     text-align: center;
     /* font-size: 2rem; */
     font-family: "Roboto", sans-serif;
@@ -7,22 +7,23 @@ body{
     box-sizing: border-box;
 }
 
-.count{
+.count {
     font-size: 3rem;
 }
 
-button{
+button {
     background-color: cyan;
     padding: 10px 16px;
     border: 1px solid gray;
     border-radius: 8px;
     cursor: pointer;
 }
-.class{
+
+.class {
     margin-top: 20px;
 }
 
-input{
+input {
     width: 50px;
     text-align: center;
     font-size: 1.5rem;
@@ -31,11 +32,12 @@ input{
     border-radius: 8px;
     padding: 10px;
 }
-.reset{
+
+.reset {
     margin-top: 20px;
 }
 
-.profile-image{
+.profile-image {
     background-image: url(profile.jpg);
     background-size: cover;
     width: 80px;
@@ -43,19 +45,20 @@ input{
     border-radius: 100%;
     margin-right: 10px;
 }
-.name{
+
+.name {
     font-size: 1.2rem;
 }
 
-.image-create{
+.image-create {
     display: flex;
     align-items: center;
 }
 
-.navigation{
+.navigation {
     display: flex;
     justify-content: center;
-    
+
     align-items: center;
     /* padding: 0 20px; */
     text-decoration: none;
@@ -72,12 +75,38 @@ input{
     margin: 10px;
 }
 
-.navigation img{
+.navigation img {
     width: 50px;
     height: 50px;
     border-radius: 100%;
 }
 
-.github{
+.github {
     cursor: pointer;
+    z-index: 10;
+
+    /* The filter: brightness(); CSS property is used to adjust the brightness of an element, such as an image or a text block. It applies a filter that makes the element appear brighter or darker depending on the specified value. */
+
+    /* value: A number that represents the amount of brightness to apply. This can be a percentage or a decimal number:
+    0% or 0: Makes the element completely black (no brightness).
+    100% or 1: Leaves the brightness unchanged (default value).
+    Values greater than 100% or 1: Make the element brighter.
+    Values between 0 and 1 (like 0.5 or 50%): Make the element darker. */
+    filter: brightness(1%);
+}
+
+.theme {
+    cursor: pointer;
+}
+
+.dark {
+    transition: all 0.5s ease-in-out;
+    background-color: #27292d;
+    color: rgb(236, 236, 236);
+}
+
+@media screen and (min-width: 768px) {
+    .theme {
+        margin-left: 600px;
+    }
 }
